@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            width: 100%;
+            background: #582bd4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            margin: 20px;
+        }
+        main {
+            flex: 2;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #ddd;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: #232272;
+            color: white;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="11759379-ko-k-o-brief-logo-ontwerp-eerste-brief-ko-gekoppeld-cirkel-hoofdletters-monogram-logo-rood-en-blauw-ko-logo-k-o-ontwerp-ko-k-o-vector.jpg" alt="Mijn Logo" class="logo">
+        <h1>Mijn Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h2>Welkom op mijn website</h2>
+            <p>Hier komt de inhoud van de homepage.</p>
+        </main>
+        <aside>
+            <h3>Laatste project</h3>
+            <p>Beschrijving van het nieuwste project.</p>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2025 Mijn Website</p>
+    </footer>
+</body>
+</html>
